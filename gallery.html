@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - WEBSITEKU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html">HI, I'M NAJWA</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="gallery">
+            <h2>Temukan momen-momen menarikku di sini!</h2>
+            <div class="gallery-group">
+                <h3>My Family</h3>
+                <div class="gallery-container">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="family1.jpg" alt="Vacation 1">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="family2.jpg" alt="Vacation 2">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="family3.jpg" alt="Vacation 3">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="family4.jpg" alt="Vacation 4">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="family5.jpg" alt="Vacation 5">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-group">
+                <h3>My Friends</h3>
+                <div class="gallery-container">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="friends1.jpg" alt="Nature 1">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="friends2.jpg" alt="Nature 2">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="friends3.jpg" alt="Nature 3">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="friends4.jpg" alt="Nature 4">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="friends5.jpg" alt="Nature 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2024. <b>WEBSITEKU.</b>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

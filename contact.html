@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WEBSITEKU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+    <div class="wrapper">
+        <div class="logo"><a href="index.html">HI, I'M NAJWA.</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Alamat: <a href="https://maps.app.goo.gl/eCA1bLatRGC4KZTE6?g_st=com.google.maps.preview.copy" target="_blank">Jl. Kp.Baru, Kembangan Utara, Jakarta Barat</a></p>
+            <p>Kode Pos: 11610</p>
+            <p>Email: <a href="mailto:najwachantika7@gmail.com">najwachantika7@gmail.com</a></p>
+            <p>Telepon: <a href="tel:+6285871590106">+62 858 7159 0106</a></p>
+        </div>
+
+        <h3>Send Me a Message</h3>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <button type="submit">Send</button>
+        </form>
+        
+        <p id="formResponse"></p>
+        
+    </section>
+</div>
+<div id="copyright">
+    <div class="wrapper">
+        &copy; 2024. <b>WEBSITEKU.</b> 
+    </div>
+</div>
+
+<script src="contact.js"></script>
+</body>
+</html>
